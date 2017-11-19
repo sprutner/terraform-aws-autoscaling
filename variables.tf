@@ -1,3 +1,7 @@
+variable "create_before_destroy" {
+  default     = false
+}
+
 # Existing launch configuration
 variable "existing_launch_configuration" {
   description = "Name of existing launch configuration to use. If empty new launch configuration will be created"

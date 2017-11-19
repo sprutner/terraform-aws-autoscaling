@@ -1,3 +1,7 @@
+variable "create-before-destroy" {
+ default = false
+}
+
 variable "name" {
   description = "The name of the auto scaling group"
 }

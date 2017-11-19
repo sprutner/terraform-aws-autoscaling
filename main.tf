@@ -54,6 +54,7 @@ module "autoscaling_group" {
   metrics_granularity       = "${var.metrics_granularity}"
   wait_for_capacity_timeout = "${var.wait_for_capacity_timeout}"
   protect_from_scale_in     = "${var.protect_from_scale_in}"
+  create_before_destroy	    = "${var.create_before_destroy}
 
   tags = "${var.tags}"
 }

@@ -2,6 +2,9 @@
 # Autoscaling group
 ####################
 resource "aws_autoscaling_group" "this" {
+  lifecycle {
+    create_before_destroy = ${var.create_before_destroy}
+  }
   name_prefix = "${var.name}-"
 
   launch_configuration = "${var.launch_configuration}"
